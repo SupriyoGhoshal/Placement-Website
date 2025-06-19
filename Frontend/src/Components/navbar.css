@@ -1,0 +1,55 @@
+.navbar{
+    margin: 10px !important;
+}
+
+/* Base animation setup for all nav-links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+/* Hover animation for all nav links */
+.nav-link:hover {
+  color: #0d6efd;
+  transform: scale(1.05);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* 🔥 Make the first link always active-looking */
+.navbar-nav li:first-child .nav-link {
+  color: #0d6efd;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.navbar-nav li:first-child .nav-link::after {
+  width: 100%;
+}
+
+/* 
+.offcanvas-start {
+  width: 240px;
+}
+
+.offcanvas .nav-link {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.offcanvas .nav-link:hover {
+  color: #0d6efd;
+} */

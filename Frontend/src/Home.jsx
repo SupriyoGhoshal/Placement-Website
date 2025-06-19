@@ -1,4 +1,4 @@
-import HomePage from "./Components/Navbar";
+import Navbar from "./Components/Navbar";
 
 function Home() {
     return ( 
