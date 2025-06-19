@@ -4,7 +4,7 @@ import "./navbar.css";
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
-            <div className="container-fluid">
+            <div className="container-fluid" style={{width: "89%"}}>
                 {/* Logo and Brand */}
                 <Link to="/" className="navbar-brand d-flex align-items-center">
                     <img
@@ -39,13 +39,16 @@ function Navbar() {
                             <Link to="/" className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/curriculum" className="nav-link">Course & Curriculum</Link>
-                        </li>
-                        <li className="nav-item">
                             <Link to="/faculty" className="nav-link">Faculty & Staff</Link>
                         </li>
                         <li className="nav-item">
+                            <Link to="/curriculum" className="nav-link">Course & Curriculum</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link to="/clubs" className="nav-link">Clubs</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/gallery" className="nav-link">Gallery</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/contact" className="nav-link">Contact</Link>

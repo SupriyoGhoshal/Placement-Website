@@ -1,6 +1,3 @@
-.navbar{
-    margin: 10px !important;
-}
 
 /* Base animation setup for all nav-links */
 .nav-link {
@@ -15,13 +12,13 @@
   left: 0;
   height: 2px;
   width: 0%;
-  background-color: #0d6efd;
+  background-color: #4682b4;
   transition: width 0.3s ease;
 }
 
 /* Hover animation for all nav links */
 .nav-link:hover {
-  color: #0d6efd;
+  color: #4682b4;
   transform: scale(1.05);
 }
 
@@ -31,7 +28,7 @@
 
 /* 🔥 Make the first link always active-looking */
 .navbar-nav li:first-child .nav-link {
-  color: #0d6efd;
+  color: #4682b4;
   font-weight: bold;
   transform: scale(1.05);
 }
@@ -40,16 +37,3 @@
   width: 100%;
 }
 
-/* 
-.offcanvas-start {
-  width: 240px;
-}
-
-.offcanvas .nav-link {
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.offcanvas .nav-link:hover {
-  color: #0d6efd;
-} */

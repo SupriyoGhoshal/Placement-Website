@@ -1,0 +1,53 @@
+/* Animation */
+.fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Pagecard{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Left Card with Background Image */
+.bg-image-card {
+  background-image: url("https://mywbut.com/logo_pic/5adb6ab01a0dbdcaa750ad58f3f3a2a1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.bg-image-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* background-color: rgba(70, 130, 180, 0.75);  */
+  z-index: 0;
+  border-radius: 1rem;
+}
+
+.bg-image-card .card-body {
+  position: relative;
+  z-index: 1;
+}
+
+/* Right Card */
+.rightCard {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
