@@ -1,5 +1,4 @@
-
-/* Base animation setup for all nav-links */
+/* 
 .nav-link {
   position: relative;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -16,7 +15,6 @@
   transition: width 0.3s ease;
 }
 
-/* Hover animation for all nav links */
 .nav-link:hover {
   color: #4682b4;
   transform: scale(1.05);
@@ -26,7 +24,7 @@
   width: 100%;
 }
 
-/* 🔥 Make the first link always active-looking */
+
 .navbar-nav li:first-child .nav-link {
   color: #4682b4;
   font-weight: bold;
@@ -36,4 +34,94 @@
 .navbar-nav li:first-child .nav-link::after {
   width: 100%;
 }
+ */
 
+
+ /* Navbar Styling to Match Hero Section */
+.navbar {
+    background: rgba(30, 60, 114, 0.9) !important;
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(30, 60, 114, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: rotate(15deg);
+}
+
+.brand-text {
+    color: white;
+}
+
+.brand-text small {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: rgba(30, 60, 114, 0.95);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    .nav-link {
+        margin: 8px 0;
+        padding: 8px 15px;
+    }
+    
+    .nav-link::after {
+        bottom: 0;
+    }
+}
