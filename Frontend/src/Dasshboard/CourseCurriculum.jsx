@@ -1,7 +1,7 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-function Placement() {
+function CourseCurriculum() {
     return ( 
         <>
             <Navbar/>
@@ -10,4 +10,4 @@ function Placement() {
     );
 }
 
-export default Placement;
+export default CourseCurriculum;
